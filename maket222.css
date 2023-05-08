@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
@@ -25,28 +26,27 @@ body {
     left: 570px;
     border: 1px solid #808080;
     display: none;
-    z-index:100;
-
+    z-index: 100;
 }
 
 .visible {
     display: block;
 }
 
+.login,
 .h4 {
-    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
+}
+
+.h4 {
+    text-align: center;
     margin-top: 26px;
 }
 
 .login {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
     line-height: 28px;
     width: 444px;
     height: 55px;
@@ -56,8 +56,8 @@ body {
     margin-top: 36px;
 }
 
-.button1 {
-    margin-top: 56px;
+.button1,
+.button {
     background: #EA5D21;
     width: 153px;
     height: 50px;
@@ -70,8 +70,31 @@ body {
     line-height: 21px;
     color: #FFFFFF;
     text-decoration: none;
+    /*убрать нижнее подчеркивание*/
+
+}
+
+.button1 {
     margin-top: 56px;
     margin-left: 174px;
+
+}
+
+.button {
+    box-shadow: 0 2px 1px 0 rgb(32, 30, 32);
+    transition: all .3s;
+}
+
+button:hover {
+    background-color: rgb(210, 39, 44);
+    color: white;
+    text-decoration: underline;
+}
+
+.button:active {
+    box-shadow: 0px 0px 1px 0 rgb(39, 34, 39);
+    background-color: white;
+    margin-top: 2px;
 }
 
 .img {
@@ -100,57 +123,25 @@ body {
     margin-left: 54px;
 }
 
-.menu_link {
+.menu_link,
+.menu_link_activ {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 23px;
-    text-decoration-line: underline;
-    color: #FFFFFF;
     padding: 28px 18px;
     display: block;
+}
+
+.menu_link {
+    text-decoration-line: underline;
+    color: #FFFFFF;
 }
 
 .menu_link_activ {
     background: #FFFFFF;
     color: #213B7E;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
     text-decoration-line: none;
-    padding: 28px 18px;
-    display: block;
-}
-
-.button {
-    background: #EA5D21;
-    width: 153px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #FFFFFF;
-    text-decoration: none;
-    /*убрать нижнее подчеркивание*/
-    box-shadow: 0 2px 1px 0 rgb(32, 30, 32);
-    transition: all .3s;
-}
-
-button:hover {
-    background-color: rgb(210, 39, 44);
-    color: white;
-    text-decoration: underline;
-}
-
-.button:active {
-    box-shadow: 0px 0px 1px 0 rgb(39, 34, 39);
-    background-color: white;
-    margin-top: 2px;
 }
 
 .content {
@@ -213,7 +204,8 @@ button:hover {
     max-width: 635px;
 }
 
-.content_article {
+.content_article,
+.sub {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -224,11 +216,7 @@ button:hover {
 .sub {
     padding-top: 15px;
     padding-bottom: 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 29px;
-    color: #000000;
+
 }
 
 .about_text {
@@ -346,47 +334,51 @@ button:hover {
     padding-right: calc(50% - 1202px / 2);
     margin-top: 37px;
 }
-.other{
-    
-}
+
 .students {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 24px;
 }
-.shadow-drop-2-center{
+
+.shadow-drop-2-center {
     -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 @-webkit-keyframes shadow-drop-2-center {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+
     100% {
-      -webkit-transform: translateZ(50px);
-              transform: translateZ(50px);
-      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
-  }
-  @keyframes shadow-drop-2-center {
+}
+
+@keyframes shadow-drop-2-center {
     0% {
-      -webkit-transform: translateZ(0);
-              transform: translateZ(0);
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
+
     100% {
-      -webkit-transform: translateZ(50px);
-              transform: translateZ(50px);
-      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        -webkit-transform: translateZ(50px);
+        transform: translateZ(50px);
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
-  }
+}
+
 .student {
     width: 200px;
     position: relative;
@@ -411,28 +403,10 @@ button:hover {
     height: 270px;
 }
 
-.student_name {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    color: #000000;
-    margin-top: 8px;
-}
-
 .content-kurc {
     margin-top: 33px;
     padding-left: calc(50% - 820px / 2);
     padding-right: calc(50% - 820px / 2);
-}
-
-.text-ku {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    color: #000000;
-    padding-top: 25px;
 }
 
 .video {
@@ -459,20 +433,36 @@ button:hover {
     width: 100%;
 }
 
-.contact {
+.contact,
+.adress,
+.text-ku,
+.student_name {
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     color: #000000;
+}
+
+.student_name {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contact {
     margin-top: 15px;
     margin-left: 216px;
 }
 
+.text-ku {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
 .adress {
-    font-style: normal;
-    font-weight: 400;
     font-size: 18px;
-    color: #000000;
     margin-top: 10px;
     margin-left: 216px;
     line-height: 40px;
@@ -481,14 +471,14 @@ button:hover {
 @media (max-width:1024px) {
 
     /*стили для планшета*/
-    .header {
-        padding-left: 32px;
-        padding-right: 32px;
+    .header,
+    .footer {
         background: #1f968a;
     }
 
-    .footer {
-        background: #1f968a;
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .menu {
@@ -504,7 +494,8 @@ button:hover {
         align-items: center;
     }
 
-    .content {
+    .content,
+    .content-stud {
         padding-left: calc(50% - 736px / 2);
         padding-right: calc(50% - 736px / 2);
     }
@@ -513,17 +504,10 @@ button:hover {
         width: 60%;
     }
 
-    .content-stud {
-        padding-left: calc(50% - 736px / 2);
-        padding-right: calc(50% - 736px / 2);
-
-    }
-
     .block.visible {
         top: 29%;
         left: 29%;
     }
-
 }
 
 @media (max-width:767px) {
@@ -596,7 +580,6 @@ button:hover {
         border: 1px solid #808080;
     }
 
-
     .login {
         font-size: 17px;
         line-height: 20px;
@@ -604,7 +587,6 @@ button:hover {
         height: 50px;
         margin-left: 28px;
         margin-top: 36px;
-
     }
 
     .h4 {
@@ -616,7 +598,6 @@ button:hover {
     .button1 {
         margin-top: 27px;
         margin-left: 108px;
-
     }
 
     .title-con {
@@ -631,5 +612,4 @@ button:hover {
         font-size: 15px;
         margin-left: 30px;
     }
-
 }
