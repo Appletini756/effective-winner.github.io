@@ -22,8 +22,8 @@ body {
     height: 418px;
     background-color: #FFFFFF;
     position: absolute;
-    top: 150px;
-    left: 570px;
+    top: 122px;
+    left: 470px;
     border: 1px solid #808080;
     display: none;
     z-index: 100;
@@ -55,6 +55,9 @@ body {
     margin-left: 28px;
     margin-top: 36px;
 }
+.logo{
+    margin-left: 16px;
+    }
 
 .button1,
 .button {
@@ -81,6 +84,7 @@ body {
 }
 
 .button {
+    margin-right: 16px;
     box-shadow: 0 2px 1px 0 rgb(32, 30, 32);
     transition: all .3s;
 }
@@ -112,8 +116,8 @@ button:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: calc(50% - 1268px / 2);
-    padding-right: calc(50% - 1268px / 2);
+    padding-left: calc(50% - 1300px / 2);
+    padding-right: calc(50% - 1300px / 2);
 }
 
 .menu {
@@ -505,7 +509,7 @@ button:hover {
     }
 
     .block.visible {
-        top: 29%;
+        top: 20%;
         left: 29%;
     }
 }
@@ -575,7 +579,7 @@ button:hover {
         width: 350px;
         height: 350px;
         background-color: #FFFFFF;
-        top: 50%;
+        top: 40%;
         left: auto;
         border: 1px solid #808080;
     }
