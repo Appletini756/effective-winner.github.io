@@ -22,8 +22,8 @@ body {
     height: 418px;
     background-color: #FFFFFF;
     position: absolute;
-    top: 150px;
-    left: 570px;
+    top: 122px;
+    left: 470px;
     border: 1px solid #808080;
     display: none;
     z-index: 100;
@@ -505,7 +505,7 @@ button:hover {
     }
 
     .block.visible {
-        top: 29%;
+        top: 20%;
         left: 29%;
     }
 }
@@ -575,7 +575,7 @@ button:hover {
         width: 350px;
         height: 350px;
         background-color: #FFFFFF;
-        top: 50%;
+        top: 40%;
         left: auto;
         border: 1px solid #808080;
     }
