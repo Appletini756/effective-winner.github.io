@@ -37,6 +37,26 @@
                 </ul>
             </nav>
             <button class="button">Войти</button>
+            <div class="block">
+                <form class="reg" action="#">
+                    <h4 class="h4">Войти на сайт</h4>
+                    <input class="login" type="text" placeholder="Логин">
+                    <input class="login" type="password" placeholder="Пароль">
+                    <button class="button1">Войти</button>
+                </form>
+            </div>
+            <script>
+                const button = document.querySelector('.button');
+                const blockpopup = document.querySelector('.block')
+                const button2 = document.querySelector('.button1');
+
+                button.addEventListener('click', function (e) {
+                    blockpopup.classList.toggle('visible');
+                });
+                button2.addEventListener('click', function (e) {
+                    blockpopup.classList.toggle('visible');
+                });
+            </script>
         </header>
         <main class="content-contact">
             <h1 class="title-con">Как нас найти 🗺️️
@@ -46,7 +66,7 @@
                 height="474" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h3 class="contact">Наши контакты</h3>
-            <p class="adress">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000<br> <a style="color: black;"
+            <p class="adress">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000 <a style="color: black;"
                     href="tel:+78125555555">Тел: +7 (812) 555-55-55</a> </p>
         </main>
     </div>
